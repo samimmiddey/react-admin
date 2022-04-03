@@ -49,6 +49,9 @@ const SingleUser = () => {
          setTableData(data);
       };
       sendTableDataRequest({ url: 'https://react-app-12cc2-default-rtdb.firebaseio.com/data.json' }, transformTableData);
+      return () => {
+         setTableData({});
+      };
    }, [sendTableDataRequest]);
 
    const isLoading = isUserLoading && isTableLoading;

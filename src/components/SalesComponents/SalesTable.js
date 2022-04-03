@@ -6,9 +6,12 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { Card, CardContent, Typography } from '@mui/material';
+import { Card, CardContent, Typography, Button } from '@mui/material';
+import { useSelector } from 'react-redux';
 
 const SalesTable = (props) => {
+   const darkMode = useSelector(state => state.ui.darkMode);
+
    return (
       <Card elevation={0} sx={{ padding: '24px' }}>
          <CardContent sx={{ paddingLeft: 0, paddingTop: 0 }}>
@@ -37,7 +40,23 @@ const SalesTable = (props) => {
                         <TableCell align="left">{row.product}</TableCell>
                         <TableCell align="left">{row.amount}</TableCell>
                         <TableCell align="left">{row.method}</TableCell>
-                        <TableCell align="left">{row.status}</TableCell>
+                        <TableCell align="left">
+                           <Button
+                              size='small'
+                              sx={{
+                                 borderColor: darkMode ? `${row.status === 'Approved' ? '#2e7d32' : '#9e9d24'}` : `${row.status === 'Approved' ? '#c8e6c9' : '#f0f4c3'}`,
+                                 backgroundColor: darkMode ? `${row.status === 'Approved' ? '#2e7d32' : '#9e9d24'}` : `${row.status === 'Approved' ? '#c8e6c9' : '#f0f4c3'}`,
+                                 color: darkMode ? `${row.status === 'Approved' ? '#fff' : '#fff'}` : `${row.status === 'Approved' ? '#43a047' : '#afb42b'}`,
+                                 '&:hover': {
+                                    borderColor: `${row.status === 'Approved' ? '#1b5e20' : '#827717'}`,
+                                    backgroundColor: `${row.status === 'Approved' ? '#1b5e20' : '#827717'}`,
+                                 },
+                              }}
+                              variant='outlined'
+                           >
+                              {row.status}
+                           </Button>
+                        </TableCell>
                      </TableRow>
                   ))}
                </TableBody>

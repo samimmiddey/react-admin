@@ -92,12 +92,12 @@ const UserList = (props) => {
                   size='small'
                   variant="outlined"
                   sx={{
-                     borderColor: darkMode ? `${params.row.status === 'Approved' ? '#81c784' : '#dce775'}` : `${params.row.status === 'Approved' ? '#c8e6c9' : '#f0f4c3'}`,
-                     backgroundColor: darkMode ? `${params.row.status === 'Approved' ? '#81c784' : '#dce775'}` : `${params.row.status === 'Approved' ? '#c8e6c9' : '#f0f4c3'}`,
-                     color: darkMode ? `${params.row.status === 'Approved' ? '#1b5e20' : '#827717'}` : `${params.row.status === 'Approved' ? '#43a047' : '#afb42b'}`,
+                     borderColor: darkMode ? `${params.row.status === 'Approved' ? '#2e7d32' : '#9e9d24'}` : `${params.row.status === 'Approved' ? '#c8e6c9' : '#f0f4c3'}`,
+                     backgroundColor: darkMode ? `${params.row.status === 'Approved' ? '#2e7d32' : '#9e9d24'}` : `${params.row.status === 'Approved' ? '#c8e6c9' : '#f0f4c3'}`,
+                     color: darkMode ? `${params.row.status === 'Approved' ? '#fff' : '#fff'}` : `${params.row.status === 'Approved' ? '#43a047' : '#afb42b'}`,
                      '&:hover': {
-                        borderColor: `${params.row.status === 'Approved' ? '#a5d6a7' : '#e6ee9c'}`,
-                        backgroundColor: `${params.row.status === 'Approved' ? '#a5d6a7' : '#e6ee9c'}`,
+                        borderColor: `${params.row.status === 'Approved' ? '#1b5e20' : '#827717'}`,
+                        backgroundColor: `${params.row.status === 'Approved' ? '#1b5e20' : '#827717'}`,
                      },
                   }}
                >

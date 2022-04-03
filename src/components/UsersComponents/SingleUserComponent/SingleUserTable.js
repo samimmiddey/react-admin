@@ -14,7 +14,7 @@ const HomeTable = (props) => {
    return (
       <Card elevation={0} sx={{ padding: '24px' }}>
          <CardContent sx={{ padding: '0px 0 16px 0' }}>
-            <Typography variant='h6' sx={{ fontWeight: 600, color: 'text.primary' }}>Transactions</Typography>
+            <Typography variant='h6' sx={{ fontWeight: 600, color: 'text.primary' }}>Transaction History</Typography>
          </CardContent>
          <TableContainer component={Paper} elevation={0} sx={{ borderBottom: 'none' }}>
             <Table sx={{ minWidth: 650 }}>
@@ -44,12 +44,12 @@ const HomeTable = (props) => {
                            <Button
                               size='small'
                               sx={{
-                                 borderColor: darkMode ? `${row.status === 'Approved' ? '#81c784' : '#dce775'}` : `${row.status === 'Approved' ? '#c8e6c9' : '#f0f4c3'}`,
-                                 backgroundColor: darkMode ? `${row.status === 'Approved' ? '#81c784' : '#dce775'}` : `${row.status === 'Approved' ? '#c8e6c9' : '#f0f4c3'}`,
-                                 color: darkMode ? `${row.status === 'Approved' ? '#1b5e20' : '#827717'}` : `${row.status === 'Approved' ? '#43a047' : '#afb42b'}`,
+                                 borderColor: darkMode ? `${row.status === 'Approved' ? '#2e7d32' : '#9e9d24'}` : `${row.status === 'Approved' ? '#c8e6c9' : '#f0f4c3'}`,
+                                 backgroundColor: darkMode ? `${row.status === 'Approved' ? '#2e7d32' : '#9e9d24'}` : `${row.status === 'Approved' ? '#c8e6c9' : '#f0f4c3'}`,
+                                 color: darkMode ? `${row.status === 'Approved' ? '#fff' : '#fff'}` : `${row.status === 'Approved' ? '#43a047' : '#afb42b'}`,
                                  '&:hover': {
-                                    borderColor: `${row.status === 'Approved' ? '#a5d6a7' : '#e6ee9c'}`,
-                                    backgroundColor: `${row.status === 'Approved' ? '#a5d6a7' : '#e6ee9c'}`,
+                                    borderColor: `${row.status === 'Approved' ? '#1b5e20' : '#827717'}`,
+                                    backgroundColor: `${row.status === 'Approved' ? '#1b5e20' : '#827717'}`,
                                  },
                               }}
                               variant='outlined'

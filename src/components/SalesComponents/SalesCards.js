@@ -9,7 +9,7 @@ import { Divider, Grid, IconButton } from '@mui/material';
 import SalesCardInnerChart from './SalesCardInnerChart';
 import { useSelector } from 'react-redux';
 
-const buttonColors = ['#ffebee', '#fce4ec', '#f3e5f5'];
+const buttonColors = ['#ffebee', '#fce4ec', '#f3e5f5', '#e1f5fe'];
 
 const SalesCards = () => {
    const darkMode = useSelector(state => state.ui.darkMode);

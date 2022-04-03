@@ -42,7 +42,7 @@ const ProductComponents = (props) => {
       <>
          {showSnackbar && <SuccessSnackbar />}
          <CardContainer elevation={0} >
-            <Typography variant='h6' sx={{ fontWeight: 500, color: 'text.disabled' }}>Products</Typography>
+            <Typography variant='h6' sx={{ fontWeight: 600, color: 'text.primary' }}>Products</Typography>
             <Container>
                <TextField
                   label="Search Products"
