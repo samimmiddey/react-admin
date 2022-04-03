@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.dark {
+  background-color: #1f292e;
+}
+
+.active .nav {
+  background-color: #ede7f6;
+}
+
+.active .nav:hover {
+  background-color: #d1c4e9;
+}
+
+.active-dark .nav-dark {
+  background-color: #37474f;
+}
+
+.active-dark .nav-dark:hover {
+  background-color: #455a64;
+}
+
+.active .nav .nav-icon {
+  color: #7e57c2;
+}
+
+.active-dark .nav-dark .nav-icon-dark {
+  color: #78909c;
+}
+
+.active .nav .nav-child {
+  color: #7e57c2;
+}
+
+.active-dark .nav-dark .nav-child-dark {
+  color: #90a4ae;
+}

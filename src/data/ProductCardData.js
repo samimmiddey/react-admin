@@ -1,0 +1,88 @@
+// const ProductCardData = [
+//    {
+//       img: 'https://source.unsplash.com/PDX_a_82obo',
+//       name: 'Headphones',
+//       ratingDetails: '(12.99+)',
+//       price: '$82.99',
+//       discount: '$16.99',
+//    },
+//    {
+//       img: 'https://source.unsplash.com/MEsWk-dZzlI',
+//       name: 'Skincare',
+//       ratingDetails: '(15.99+)',
+//       price: '$35.99',
+//       discount: '$9.99',
+//    },
+//    {
+//       img: 'https://source.unsplash.com/ArGvQkA7iOw',
+//       name: 'Fruits',
+//       ratingDetails: '(20.99+)',
+//       price: '$18.99',
+//       discount: '$3.99',
+//    },
+//    {
+//       img: 'https://source.unsplash.com/164_6wVEHfI',
+//       name: 'Sneakers',
+//       ratingDetails: '(81.99+)',
+//       price: '$66.99',
+//       discount: '$11.99',
+//    },
+//    {
+//       img: 'https://source.unsplash.com/2cFZ_FB08UM',
+//       name: 'Smart Watch',
+//       ratingDetails: '(69.99+)',
+//       price: '$99.99',
+//       discount: '$21.99',
+//    },
+//    {
+//       img: 'https://source.unsplash.com/I7A_pHLcQK8',
+//       name: 'Fast Food',
+//       ratingDetails: '(22.99+)',
+//       price: '$19.99',
+//       discount: '$6.99',
+//    },
+//    {
+//       img: 'https://source.unsplash.com/dah-jZWgzx8',
+//       name: 'Shampoo',
+//       ratingDetails: '(38.99+)',
+//       price: '$9.99',
+//       discount: '$1.99',
+//    },
+//    {
+//       img: 'https://source.unsplash.com/6LBBOwkPzyQ',
+//       name: 'Lotion & Oil',
+//       ratingDetails: '(18.99+)',
+//       price: '$26.99',
+//       discount: '$7.99',
+//    },
+//    {
+//       img: 'https://source.unsplash.com/Nv4QHkTVEaI',
+//       name: 'Clothing',
+//       ratingDetails: '(53.99+)',
+//       price: '$78.99',
+//       discount: '$25.99',
+//    },
+//    {
+//       img: 'https://source.unsplash.com/eZFPIyjJQxM',
+//       name: 'Wrist Watch',
+//       ratingDetails: '(29.99+)',
+//       price: '$56.99',
+//       discount: '$15.99',
+//    },
+//    {
+//       img: 'https://source.unsplash.com/5adPowUq_h0',
+//       name: 'Cosmetics',
+//       ratingDetails: '(33.99+)',
+//       price: '$29.99',
+//       discount: '$9.99',
+//    },
+//    {
+//       img: 'https://source.unsplash.com/3xtCeUhqZWE',
+//       name: 'Sunglasses',
+//       ratingDetails: '(28.99+)',
+//       price: '$45.99',
+//       discount: '$12.99',
+//    },
+// ];
+
+// export default ProductCardData;
