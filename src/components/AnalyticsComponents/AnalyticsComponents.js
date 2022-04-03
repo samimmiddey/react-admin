@@ -11,12 +11,36 @@ import AnalyticsOrder from './AnalyticsOrder';
 const AnalyticsComponents = (props) => {
    return (
       <>
-         <Card elevation={0} sx={{ marginBottom: '24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+         <Card elevation={0}
+            sx={theme => ({
+               marginBottom: '24px',
+               display: 'flex',
+               alignItems: 'center',
+               justifyContent: 'space-between',
+               [theme.breakpoints.down('sm')]: {
+                  flexDirection: 'column',
+                  alignItems: 'flex-start',
+                  justifyContent: 'center'
+               }
+            })}
+         >
             <CardContent>
                <Typography variant='h6' sx={{ fontWeight: 600, color: 'text.primary' }}>Analytics</Typography>
             </CardContent>
-            <CardActions sx={{ display: 'flex', alignItems: 'center', columnGap: '20px' }}>
-               <Button sx={{ minHeight: 0, minWidth: 0, padding: '7px 20px' }} variant='outlined'><BarChartOutlinedIcon /> Reports</Button>
+            <CardActions
+               sx={theme => ({
+                  display: 'flex',
+                  alignItems: 'center',
+                  columnGap: '20px',
+                  [theme.breakpoints.down('375')]: {
+                     flexDirection: 'column',
+                     alignItems: 'flex-start',
+                     rowGap: '16px',
+                     width: '100%'
+                  }
+               })}
+            >
+               <Button sx={theme => ({ minHeight: 0, minWidth: 0, padding: '7px 20px', [theme.breakpoints.down('375')]: { width: '100%' } })} variant='outlined'><BarChartOutlinedIcon /> Reports</Button>
                <AnalyticsReportsSelect />
             </CardActions>
          </Card>

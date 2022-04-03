@@ -13,7 +13,7 @@ const AnalyticsReportsSelect = () => {
    };
 
    return (
-      <Box sx={{ minWidth: 120 }}>
+      <Box sx={theme => ({ minWidth: 120, [theme.breakpoints.down('375')]: {width: '100%'} })}>
          <FormControl fullWidth size='small'>
             <InputLabel>Period</InputLabel>
             <Select
